@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Julia | Certificados</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <div class="particles" id="particles"></div>
+
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">JS</a>
+      <ul class="nav-links">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#certificados">Certificados</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#sobre" class="mobile-link">Sobre</a></li>
+      <li><a href="#certificados" class="mobile-link">Certificados</a></li>
+      <li><a href="#contato" class="mobile-link">Contato</a></li>
+    </ul>
+  </div>
+
+  <section class="hero" id="hero">
+    <div class="hero-ornament hero-ornament--tl"></div>
+    <div class="hero-ornament hero-ornament--br"></div>
+
+    <div class="hero-content">
+      <p class="hero-eyebrow">bem-vindo(a) ao meu espaço</p>
+      <h1 class="hero-title">
+        <span class="hero-title__name">Julia</span>
+        <span class="hero-title__last">Seger</span>
+      </h1>
+      <p class="hero-subtitle">Certificados &amp; Conquistas</p>
+      <div class="hero-line"></div>
+      <p class="hero-tagline">cada certificado é um passo<br><em>em direção a quem eu quero ser</em></p>
+      <a href="#certificados" class="hero-cta">ver certificados</a>
+    </div>
+
+    <div class="hero-scroll">
+      <div class="hero-scroll__bar"></div>
+    </div>
+  </section>
+
+  <section class="sobre" id="sobre">
+    <div class="container">
+      <div class="sobre-grid">
+
+        <div class="sobre-photo-wrap">
+          <div class="sobre-photo-frame">
+            <img src="img/foto_juliaseger.jpg" alt="Julia" class="sobre-photo" id="profilePhoto" onerror="this.parentElement.classList.add('no-photo')" />
+            <div class="sobre-photo-placeholder">
+              <svg viewBox="0 0 80 80" fill="none"><circle cx="40" cy="30" r="18" stroke="currentColor" stroke-width="1.5"/><path d="M10 72c0-16.569 13.431-30 30-30s30 13.431 30 30" stroke="currentColor" stroke-width="1.5"/></svg>
+              <p>Adicione sua foto em<br><code>img/foto.jpg</code></p>
+            </div>
+          </div>
+          <div class="sobre-photo-deco"></div>
+        </div>
+
+        <div class="sobre-text">
+          <div class="section-label">01 — Sobre mim</div>
+          <h2 class="section-title">olá, eu sou<br><span class="highlight">Julia</span></h2>
+
+          <p class="sobre-bio">
+            Apaixonada por aprendizado contínuo e crescimento pessoal. Aqui você encontra um registro das minhas conquistas, cursos, idiomas e certificações ao longo da minha tragetória.
+          </p>
+
+          <div class="sobre-frases">
+            <div class="frase-card">
+              <span class="frase-icon">✦</span>
+              <p>"O conhecimento é a única coisa que ninguém pode tirar de você - Paulo Coelho"</p>
+            </div>
+          </div>
+
+          <div class="sobre-links">
+            <a href="https://www.linkedin.com/in/julia-seger" target="_blank" class="link-btn link-btn--linkedin">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              LinkedIn
+            </a>
+            <a href="https://github.com/juliasgr" target="_blank" class="link-btn link-btn--github">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+              GitHub
+            </a>
+            <a href="img/curriculo.pdf" target="_blank" class="link-btn link-btn--cv">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+              Currículo
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="certificados" id="certificados">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">02 — Conquistas</div>
+        <h2 class="section-title">meus <span class="highlight">Certificados</span></h2>
+        <p class="section-desc">Uma coleção de aprendizados e conquistas ao longo da jornada.</p>
+      </div>
+
+      <div class="cert-stats" id="certStats">
+        <div class="stat-item">
+          <span class="stat-number" id="statTotal">0</span>
+          <span class="stat-label">Total</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number" id="statIdiomas">0</span>
+          <span class="stat-label">Idiomas</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number" id="statCursos">0</span>
+          <span class="stat-label">Cursos</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number" id="statEscolas">0</span>
+          <span class="stat-label">Escolas</span>
+        </div>
+      </div>
+
+      <div class="filters">
+        <div class="filters-label">Filtrar por:</div>
+        <div class="filters-wrap">
+          <button class="filter-btn active" data-filter="all">Todos</button>
+          <button class="filter-btn" data-filter="idioma">
+            <span class="filter-dot filter-dot--idioma"></span>Idiomas
+          </button>
+          <button class="filter-btn" data-filter="curso">
+            <span class="filter-dot filter-dot--curso"></span>Cursos
+          </button>
+          <button class="filter-btn" data-filter="escola">
+            <span class="filter-dot filter-dot--escola"></span>Escolas
+          </button>
+        </div>
+        <div class="search-wrap">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+          <input type="text" id="searchInput" placeholder="Buscar certificado..." class="search-input" />
+        </div>
+      </div>
+
+      <div class="cert-grid" id="certGrid">
+      </div>
+
+      <div class="no-results" id="noResults" style="display:none">
+        <p>Nenhum certificado encontrado 🔍</p>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer" id="contato">
+    <div class="footer-ornament"></div>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">JS</div>
+        <p class="footer-tagline">sempre aprendendo,<br><em>sempre crescendo.</em></p>
+
+        <div class="footer-links">
+          <a href="https://linkedin.com/in/julia-seger" target="_blank" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.２ ２４ ２４ ２３．２２７ ２４ ２２．２７１V１．７２９C２４ －０．７７４ ２３．２ －０ ２２．２２２ －０h．００３z"/></svg>
+          </a>
+          <a href="https://github.com/juliasgr" target="_blank" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+          </a>
+          <a href="img/curriculo.pdf" target="_blank" aria-label="Currículo">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+          </a>
+        </div>
+
+        <p class="footer-copy">© 2026 · Julia Seger · feito com carinho</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal" id="modal">
+      <button class="modal-close" id="modalClose">✕</button>
+      <div class="modal-content" id="modalContent"></div>
+    </div>
+  </div>
+
+  <script src="js/certificates.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
