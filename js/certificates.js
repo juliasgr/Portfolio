@@ -350,6 +350,28 @@ const CERTIFICATES = [
     description: "Microsoft Power Bi para Business Intelligence e Data Science",
     image: "img/c29.png",
     link: ""
+  },
+   {
+    id: 31,
+    name: "Hubspot Marketing Software",
+    institution: "Hubspot Academy",
+    type: "curso",
+    date: "Jun 2026",
+    hours: "3h",
+    description: "Hubspot Marketing Software",
+    image: "img/c31.png",
+    link: ""
+  },
+   {
+    id: 32,
+    name: "Colaboração Eficaz em Equipes Multidisciplinares",
+    institution: "Twygo Studio",
+    type: "curso",
+    date: "Jun 2026",
+    hours: "0.05h",
+    description: "Colaboração Eficaz em Equipes Multidisciplinares",
+    image: "img/c32.png",
+    link: ""
   }
 
 ];

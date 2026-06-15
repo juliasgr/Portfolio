@@ -86,6 +86,46 @@ function animateCount(el, target, duration = 900) {
 }
 
 /* =============================================
+   ORDENAÇÃO CRONOLÓGICA (mais recente → mais antigo)
+   ============================================= */
+const MONTH_MAP = {
+  jan: 0, fev: 1, mar: 2, abr: 3, mai: 4, jun: 5,
+  jul: 6, ago: 7, set: 8, out: 9, nov: 10, dez: 11
+};
+
+function parseCertDate(dateStr) {
+  if (!dateStr) return new Date(0);
+
+  let str = dateStr.trim().toLowerCase();
+
+  // Lida com intervalos: "Mar a Dez 2024" → considera "Dez 2024"
+  if (str.includes(' a ')) {
+    str = str.split(' a ').pop().trim();
+  }
+
+  const parts = str.split(/\s+/);
+
+  // Formato "Mês AAAA"
+  if (parts.length === 2) {
+    const monthKey = parts[0].slice(0, 3);
+    const month = MONTH_MAP[monthKey] ?? 11;
+    const year = parseInt(parts[1], 10);
+    return new Date(year, month, 1);
+  }
+
+  // Formato apenas "AAAA" → assume dezembro daquele ano
+  if (parts.length === 1) {
+    const year = parseInt(parts[0], 10);
+    if (!isNaN(year)) return new Date(year, 11, 31);
+  }
+
+  return new Date(0);
+}
+
+// Ordena o array global de certificados (mais recente primeiro)
+CERTIFICATES.sort((a, b) => parseCertDate(b.date) - parseCertDate(a.date));
+
+/* =============================================
    CERTIFICADOS — render, filtro, busca, stats
    ============================================= */
 const grid        = document.getElementById('certGrid');
@@ -98,7 +138,7 @@ let currentSearch = '';
 let statsAnimated  = false;
 
 function getTypeName(type) {
-  const map = { idioma: 'Idioma', curso: 'Curso', escola: 'Escola' };
+  const map = { idioma: 'Idioma', curso: 'Curso', escola: 'Diversos' };
   return map[type] || type;
 }
 
