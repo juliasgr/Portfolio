@@ -254,7 +254,7 @@ const CERTIFICATES = [
   },
   {
     id: 21,
-    name: "Menção Honrosa na Olimpíada Brasileira de Matemática das Escolas Públicas",
+    name: "Curso de Fundamentos de Programação Web",
     institution: "Rocketseat",
     type: "curso",
     date: "Ago 2025",
