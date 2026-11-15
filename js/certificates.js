@@ -1,21 +1,3 @@
-/**
- * SEUS CERTIFICADOS
- * =================
- * Edite este arquivo para adicionar, remover ou atualizar seus certificados.
- *
- * Campos:
- *   id          → número único (qualquer inteiro)
- *   name        → nome do certificado
- *   institution → escola / plataforma / instituição
- *   type        → "idioma" | "curso" | "escola"
- *   date        → "Mês AAAA"  (ex: "Jan 2024")
- *   hours       → carga horária como string (ex: "40h") — opcional
- *   description → breve descrição do conteúdo
- *   image       → caminho para imagem do certificado  (ex: "img/cert1.jpg")
- *                 ↳ deixe "" para usar placeholder
- *   link        → URL do certificado online — deixe "" se não tiver
- */
-
 const CERTIFICATES = [
   {
     id: 1,
@@ -372,7 +354,7 @@ const CERTIFICATES = [
     description: "Colaboração Eficaz em Equipes Multidisciplinares",
     image: "img/c32.png",
     link: ""
-  }
+  },
 
   {
     id: 33,
@@ -384,7 +366,7 @@ const CERTIFICATES = [
     description: "Metodologia de inovação otimização de processos",
     image: "img/designthinking.png",
     link: ""
-  }
+  },
 {
     id: 34,
     name: "Gestão de negócios: visão geral de processos de negócios",
@@ -396,5 +378,4 @@ const CERTIFICATES = [
     image: "img/gestaodenegocios.png",
     link: ""
   }
-}
 ];
