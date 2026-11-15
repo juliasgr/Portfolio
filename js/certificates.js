@@ -355,7 +355,17 @@ const CERTIFICATES = [
     image: "img/c32.png",
     link: ""
   },
-
+  {
+    id: 35,
+    name: "Seu primeiro projeto de Dados com IA",
+    institution: "EBAC",
+    type: "curso",
+    date: "Ago 2026",
+    hours: "4h",
+    description: "Criação de projeto de dados com IA",
+    image: "img/workshop.png",
+    link: ""
+  },
   {
     id: 33,
     name: "Design Thinking: viabilizando soluções",
