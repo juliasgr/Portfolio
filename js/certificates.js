@@ -396,4 +396,5 @@ const CERTIFICATES = [
     image: "img/gestaodenegocios.png",
     link: ""
   }
+}
 ];
