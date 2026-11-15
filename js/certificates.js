@@ -374,4 +374,26 @@ const CERTIFICATES = [
     link: ""
   }
 
+  {
+    id: 33,
+    name: "Design Thinking: viabilizando soluções",
+    institution: "Alura",
+    type: "curso",
+    date: "Nov 2026",
+    hours: "8h",
+    description: "Metodologia de inovação otimização de processos",
+    image: "img/designthinking.png",
+    link: ""
+  }
+{
+    id: 34,
+    name: "Gestão de negócios: visão geral de processos de negócios",
+    institution: "Alura",
+    type: "curso",
+    date: "Nov 2026",
+    hours: "8h",
+    description: "Olhar para os processos de um negócio de forma eficaz e inovadora",
+    image: "img/gestaodenegocios.png",
+    link: ""
+  }
 ];
